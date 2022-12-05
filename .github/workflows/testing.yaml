@@ -16,7 +16,7 @@ jobs:
       - name: Installing dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install libgit2
+          sudo apt-get install libgit2-dev
           pip install --upgrade pip setuptools wheel
           pip install pygit2
           pip install dvc[gs]
