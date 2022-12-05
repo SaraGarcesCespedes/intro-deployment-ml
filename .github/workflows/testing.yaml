@@ -16,7 +16,7 @@ jobs:
       - name: Installing dependencies
         run: |
           pip install --upgrade pip setuptools wheel
-          pip install pygit2==1.11
+          pip install pygit2==1.11.1
           pip install dvc[gs]
           pip install -r requirements_test.txt
       - name: Test API
