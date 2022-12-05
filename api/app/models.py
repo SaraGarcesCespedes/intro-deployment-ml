@@ -8,6 +8,7 @@ class PredictionRequest(BaseModel):
     aspect_ratio: float
     duration: int
     budget: float
+    cast_total_facebook_likes: float
     imdb_score: float
 
 

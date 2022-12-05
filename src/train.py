@@ -22,8 +22,6 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 logger.info('Loading Data...')
-import os
-print(os.getcwd())
 data = pd.read_csv(r'dataset\fulldata.csv')
 
 logger.info('Loading Model...')
