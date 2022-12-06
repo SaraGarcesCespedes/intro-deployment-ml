@@ -22,6 +22,7 @@ jobs:
           make
           sudo make install
           pip install pygit2
+          pip install pyOpenSSL --upgrade
           pip install dvc[gs]
           pip install -r requirements_test.txt
       - name: Test API
