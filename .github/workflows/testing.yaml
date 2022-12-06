@@ -16,10 +16,10 @@ jobs:
       - name: Installing dependencies
         run: |
           pip install -r requirements_test.txt
-          pip install dvc[gs]
+          pip install dvc[gs]==0.9.4
           pip install --upgrade google-cloud-storage
       - name: Test API
         run: |
           export GOOGLE_APPLICATION_CREDENTIALS=$(python utilities/setter.py)
-          dvc pull model/model.pkl -r model-track 
+          dvc pull model/model.pkl model-track 
           pytest tests.py
